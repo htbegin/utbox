@@ -26,7 +26,7 @@ tools=([0]="awk" [1]="sed" [2]="grep")
 # but "$@" is treated as a sequence of separated words
 echo "tracer cnt is ${#all_tracer[@]}"
 echo "first tracer is ${all_tracer[0]}"
-for entry in ${all_tracer[@]}
+for entry in "${all_tracer[@]}"
 do
     echo $entry
 done
@@ -62,12 +62,12 @@ act2func[D]="block_rq_issue"
 
 ```bash
 echo "the number of act: ${#act2func[@]}"
-for act in ${!act2func[@]}
+for act in "${!act2func[@]}"
 do
     echo "$act -> ${act2func[$act]}"
 done
 
-for func in ${act2func[@]}
+for func in "${act2func[@]}"
 do
     echo "func $func"
 done
