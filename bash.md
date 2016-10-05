@@ -6,7 +6,11 @@ bash variables are untyped.
 
 ## array
 
-[bash_array.md](bash_array.md)
+[array](bash_array.md)
+
+## I/O redirection
+
+[I/O redirection](bash_io_redirection.md)
 
 ## reference
 
